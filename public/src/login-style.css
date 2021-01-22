@@ -1,0 +1,99 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+body {
+    display: flex;
+    overflow-y: none;
+    overflow-x: none;
+
+    max-width: 1366px;
+}
+
+.login {
+    max-width: 500px;
+    padding-left: 11%;
+}
+
+.login img {
+    margin-top: 40px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+h2 {
+    font-family: 'Bebas Neue';
+    font-weight: 500;
+    font-size: 50px;
+    color: #6159e6;
+
+    text-align: center;
+}
+
+p {
+    font-family: 'Bebas Neue';
+    font-weight: 300;
+    font-size: 22px;
+    color: #6159e6;
+    margin: 0;
+}
+
+a {
+    font-family: 'Bebas Neue';
+    font-weight: 300;
+    font-size: 18px;
+    color: #6159e6;
+
+    margin-left: 90px;
+}
+
+input {
+    width: 300px;
+    height: 50px;
+
+    border-radius: 5px;
+    outline: none;
+    border: none;
+
+    font-size: 20px;
+
+    background: #f0f0ff;
+
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+button {
+    background: #3f3d56;
+    color: #f0f0ff;
+    font-family: 'Bebas Neue';
+
+    width: 200px;
+    height: 60px;
+
+    border-radius: 5px;
+    border: none;
+    outline: none;
+
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 50px;
+
+    font-size: 30px;
+    
+    cursor: pointer;
+}
+
+button:hover {
+    background: #6b688a;
+}
+
+.splash {
+    max-width: 500px;
+}
+
+.splash img {
+    width: 120%;
+    padding: 150px;
+}
