@@ -10,17 +10,7 @@ Considere que uma Instituição de Ensino Superior precisa de uma solução para
 ### Decisão da arquitetura utilizada
 Está sendo utilizado
 
-Vue - Express - NodeJS - JSON
-
-### Por quê utilizar JSON ao invés de um banco de dados para analisar os alunos?
-Primeiro por questões de manuseabilidade, fica muito mais fácil alimentar um JSON do que um banco de dados.
-E dependendo de outros projetos que poderia ser incrementado pela própria faculdade, facilitaria muito em questão
-de consumir isso sendo uma API. Buscar nomes de todos os alunos em um relatório semestral por exemplo para saber
-o indíce de evolução de matrícula na faculdade e outras coisas como taxa de notas por sala, é uma das coisas que
-poderiam facilitar muito ao invés de passar ao banco de dados.
-
-Como é um sistema fechado (somente quem tem acesso é um professor ou alguém da direção), não seria necessário se
-preocupar em "esconder" os conteúdos sensíveis dessa API, já que eles seriam os "Admins" do sistema.
+Vue - Express - NodeJS
 
 ### O que você melhoraria se tivesse mais tempo?
 - Algumas funcionalidades na área de professores como sistemas de notas de cada aluno por matéria e semestre, sendo buscadas por dentro
@@ -31,12 +21,23 @@ da própria pesquisa do aluno, onde ali junto de todas as outras informações e
 - Não é ideal para os professores, mas para a diretoria seria interessante uma área financeira onde poderia verificar se o aluno
 está em dia com a mensalidade em relação a faculdade.
 
+- Responsividade do projeto seguindo as necessidades, não foi dado prosseguimento devido a falha no back-end.
+
 
 ### Quais requisitos obrigatórios que não foram entregues
 - Banco de dados usando MySQL ou PostgreSQL
-- Sistema de login corretamente buscando login e senha pelo banco de dados
+- Sistema de login corretamente buscando login e senha pelo banco de dados (a busca é local e pré-definida no index.js)
+- Sistema de editar, deletar e pesquisar
+- Sistema de cadastro de novos alunos
 
 ### Relatório e Documentação (do mais novo ao mais antigo)
+25/01
+- Foi finalizado toda a parte de front-end e foi dado prosseguimento para a incrementação do back-end.
+- Foi transferida a estrutura do projeto para CLI ao invés de CDN para verificação se esse era de fato o problema do projeto, mas em vão.
+- Porém, existe um problema em questão de cadastrar um novo aluno para que ele apareça na lista.
+- Ao chamar a lista diretamente, através do Vue.data caso tenha algum conteúdo nela, é mostrado adequadamente com cada aluno, 
+mas a incrementação automatica usando o formulário não está funcionando e o problema não foi solucionado. (desde do dia 23 em desenvolvimento)
+
 22/01
 - Foi finalizado a interface de login (funcionando, mas com validação local através da variável dispónível no index.js)
 - Foi adicionado bibliotecas de terceiros como (Express-session e Body-parser)
