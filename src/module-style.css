@@ -28,7 +28,7 @@ h2 {
 }
 
 .title-content {
-    margin-left: 300px;
+    margin-left: 275px;
 }
 
 p {
@@ -123,17 +123,17 @@ button:hover {
 }
 
 .title-result p {
-    margin-left: 100px;
+    margin-left: 90px;
 }
 
 .result {
     width: 750px;
-    height: 400px;
+    height: 58vh;
 
     background: #f0f0ff;
 
     margin-left: 50px;
-    margin-top: 30px;
+    margin-top: 40px;
     border-radius: 5%;
 
     display: flex;
@@ -148,7 +148,12 @@ button:hover {
     font-weight: 600;
 
     margin-top: 15px;
-    margin-left: 90px;
+    margin-left: 25px;
+}
+
+#studentName {
+    font-weight: bold;
+    color: #6159e6;
 }
 
 .btn-edit {
@@ -157,7 +162,7 @@ button:hover {
     margin-top: -10px;
     margin-left: 20px;
     
-    display: flex;
+    display: inline-flex;
 }
 
 .edit {
@@ -172,4 +177,29 @@ button:hover {
     height: 30px;
 
     font-size: 18px;
+}
+
+.register {
+    height: 100px;
+    width: 100px;
+    display: block;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    margin-left: 35px;
+    margin-top: 0px;
+}
+
+.grid {
+    display: grid;
+}
+  
+.grid-template-columns-4 {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+}
+
+a {
+    text-decoration: none;
 }

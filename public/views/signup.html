@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <link rel="icon" href="../assets/favicon.png">
+    <link rel="stylesheet" href="../src/signup.css">
+    <title>GrupoA Educação - Full Stack Web Developer</title>
+  </head>
+  <body>
+    <div class="menu">
+      <a href="/module"><img src="../assets/logo-grupoa.png"></a>
+
+      <h2>MÓDULO ACADÊMICO</h2>
+
+      <a href="/module"><button type="submit" disabled>PROFESSORES</button></a>
+      <a href="/module"><button type="submit" name="action">ALUNOS</button></a>
+
+    </form>
+    </div>
+
+    <div class="content">
+        <div class="title-content">
+            <h2>CADASTRO DE ALUNOS</h2>
+        </div>
+
+        <div class="result">
+            <form>
+              <p>Nome do Aluno*</p>
+              <input class="form" ref="formName" placeholder="Urso da Silva" required>
+
+              <p>E-mail do Aluno</p>
+              <input class="form" ref="formEmail" type="email" placeholder="ursodasilva@acad.com.br" autocomplete="off">
+
+              <p>CPF do Aluno*</p>
+              <input class="form" ref="formCpf" maxlength="11" placeholder="12345678901" required>
+
+              <p>Telefone do Aluno</p>
+              <input class="form" ref="formPhone" type="phone" placeholder="+55 01 12345-6789">
+
+              <span class="perfil">
+                <label>
+                  <input type="file" ref="formPerfil" style="display: none;">
+                  <a><img src="../assets/avatar.png" alt="avatar do aluno"></a>
+                </label>
+              </span>
+
+              <div class="submit">
+                <button type="reset">limpar</button>
+                <button @click.prevent="getConsole">salvar</button>
+              </div>
+            </form>
+        </div>
+    </div>
+    
+  </body>
+  <script src="https://cdn.jsdelivr.net/npm/vue@2"></script>
+  <script src="../../src/script.js"></script>
+  <script src="../../src/newVue.js"></script>
+</html>

@@ -1,0 +1,151 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+body {
+    display: flex;
+    overflow-y: none;
+    overflow-x: none;
+
+    max-width: 1366px;
+}
+
+.menu {
+    max-width: 500px;
+    padding-left: 11%;
+}
+
+.menu img {
+    margin-top: 50px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+h2 {
+    font-family: 'Bebas Neue';
+    font-weight: 500;
+    font-size: 50px;
+    color: #6159e6;
+}
+
+.title-content {
+    margin-left: 250px;
+}
+
+p {
+    font-family: 'Bebas Neue';
+    font-weight: 300;
+    font-size: 22px;
+    color: #6159e6;
+    
+    margin: 0;
+    margin-left: 35px;
+    margin-top: 25px;
+}
+
+input {
+    width: 400px;
+    height: 40px;
+
+    border-radius: 5px;
+    outline: none;
+    border: none;
+
+    font-size: 20px;
+
+    background: #fff;
+
+    margin-left: 35px;
+}
+
+button {
+    background: #3f3d56;
+    color: #f0f0ff;
+    font-family: 'Bebas Neue';
+
+    width: 280px;
+    height: 60px;
+
+    border-radius: 5px;
+    border: none;
+    outline: none;
+
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+
+    font-size: 35px;
+
+    cursor: pointer;
+}
+
+button:hover {
+    background: #6b688a;
+}
+
+.content img {
+    width: 120%;
+    padding: 150px;
+}
+
+
+.result {
+    width: 750px;
+    height: 67%;
+
+    background: #e4e4f3;
+
+    margin-left: 50px;
+    margin-top: 40px;
+    border-radius: 5%;
+
+    display: flex;
+
+}
+
+a {
+    text-decoration: none;
+}
+
+div .submit {
+    display: flex;
+    margin-left: 480px;
+    margin-top: 70px;
+}
+
+div .submit button {
+    width: 100px;
+    height: 40px;
+
+    font-size: 22px;
+    
+    margin: 0;
+    margin-top: -130px;
+    margin-left: 10px;
+
+    position: relative;
+
+}
+
+.perfil img {
+    width: 250px;
+    margin-left: 475px;
+    margin-top: -520px;
+    margin-bottom: 70px;
+    border-radius: 5%;
+    padding: 0;
+
+    cursor: pointer;
+}
+
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+}

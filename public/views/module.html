@@ -10,14 +10,13 @@
   </head>
   <body>
     <div class="menu">
-      <img src="../assets/logo-grupoa.png">
+      <a href="/module"><img src="../assets/logo-grupoa.png"></a>
 
       <h2>MÓDULO ACADÊMICO</h2>
 
-      <button type="submit" name="action">PROFESSORES</button>
-      <button type="submit" name="action">ALUNOS</button>
+      <a href="/module"><button type="submit" name="action" disabled>PROFESSORES</button></a>
+      <a href="/module"><button type="submit" name="action">ALUNOS</button></a>
 
-      
     </form>
     </div>
 
@@ -27,40 +26,35 @@
         </div>
 
         <div class="search">
-            <input type="text">
+            <input type="text" placeholder="Insira o ID do Aluno">
             <button class="btn-search">PESQUISAR</button>
-            <button class="btn-search2">CADASTRAR NOVO ALUNO</button>
+            <a href="/signup"><button class="btn-search2">CADASTRAR NOVO ALUNO</button></a>
         </div>
 
         <div class="title-result">
             <p>REGISTRO ACADÊMICO</p>
             <p>NOME DO ALUNO</p>
             <p>CPF</p>
-            <p>AÇÕES</p>
+            <p style="margin-left: 135px;">AÇÕES</p>
         </div>
 
-        <div class="result">
-            <span class="register">
-                21958
-            </span>
-
-            <span class="name">
-                Anderson Marlon
-            </span>
-
-            <span class="cpf">
-                44597923896
-            </span>
-
-            <div class="btn-edit">
-                <button class="edit">editar</button>
-                <button class="delete">deletar</button>
-            </div>
+        <div id="app" class="result">
+            <ul>
+                <li v-for="student in schooldb" class="grid grid-template-columns-4">
+                    <span>{{ student.id }}</span>
+                    <span id="studentName">{{ student.name }}</span>
+                    <span>{{ student.cpf }}</span>
+                    <div class="btn-edit">
+                        <button v-on:click="edit(student)" class="edit">editar</button>
+                        <button @click="remove(student)" class="delete">deletar</button>
+                    </div>
+                </li>
+            </ul>
         </div>
     </div>
     
   </body>
   <script src="https://cdn.jsdelivr.net/npm/vue@2"></script>
-  <script src="../src/script.js"></script>
-  <script src="../src/vue.js"></script>
+  <script src="../../src/script.js"></script>
+  <script src="../../src/newVue.js"></script>
 </html>
